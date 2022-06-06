@@ -26,6 +26,6 @@ if(isset($_GET["DataPack"])) {
 
    $connection->close();
 } else {
-   echo "temperature is not set in the HTTP request";
+   echo "Error : (";
 }
 ?>
