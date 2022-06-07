@@ -30,4 +30,12 @@ if ($result) {
 else {
     echo "{$sql} Error: " . mysqli_error($connection);
 }
+
+echo ("<script type=\"text/javascript\">");
+echo ("function fresh_page()");
+echo ("{");
+echo ("window.location.reload();");
+echo ("}");
+echo ("setTimeout('fresh_page()',2000);"); //2秒刷新一次
+echo ("</script>");
 ?>
