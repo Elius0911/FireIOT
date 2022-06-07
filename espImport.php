@@ -1,23 +1,28 @@
 <?php
 require_once 'database.php';
+require_once 'sensorList.php';
 
-if(isset($_GET["DataPack"])) {
+if (isset($_GET["DataPack"])) { //若收到資料包執行
    $DataPack = $_GET["DataPack"];
-   $Datas = mb_split(",", $DataPack);
-   print_r($Datas);
-   print($Datas[0]);
-
-   $sql = "UPDATE `sensor` SET `Kitchen_fire` = " .  $Datas[0] . " WHERE " . "1";
-
-   if ($connection->query($sql) === TRUE) {
-      echo "New record created successfully";
-   } else {
-      echo "Error: " . $sql . " => " . $connection->error;
-   }
-
-   $connection->close();
+   $Datas = mb_split(",", $DataPack); //解析資料
 }
 else {
-   echo "Error : (";
+   echo "Datas Import Error : (";
 }
+
+$index = 0; //資料索引值
+while ($index < count($Datas)) {
+   $sql = "UPDATE `sensor` SET `" . $sensors[$index] . "` = " . $Datas[$index] . " WHERE 1"; //更新資料
+   if ($connection->query($sql) === true)
+      $index++;
+}
+
+if ($index === count($Datas)) { //若所有資料皆有收到, 顯示成功
+   echo "Data Update Success";
+}
+else {
+   echo "Data Update Fail : (";
+}
+
+$connection->close();
 ?>

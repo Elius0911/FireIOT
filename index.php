@@ -1,8 +1,3 @@
-<?php
-    // 連結資料庫
-    //require_once 'database.php';
-?>
-
 <!doctype html>
     <html lang = "zh-Hant-TW">
 
