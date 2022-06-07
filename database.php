@@ -1,4 +1,5 @@
 <?php
+//資料庫連接
 $host = 'localhost';
 $dbUser ='root';
 $dbPassword = 'root';
