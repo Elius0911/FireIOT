@@ -1,31 +1,28 @@
 <?php
 require_once 'database.php';
+require_once 'sensorList.php';
 
-$sensors = ["Kitchen_fire",
-            "Kitchen_smoke",
-            "Kitchen_people",
-         ];
-
-if(isset($_GET["DataPack"])) {
+if (isset($_GET["DataPack"])) {
    $DataPack = $_GET["DataPack"];
    $Datas = mb_split(",", $DataPack);
-   print_r($Datas);
 }
 else {
-   echo "Error : (";
+   echo "Datas Import Error : (";
 }
 
-function Update ($sensor, $data, $connec) {
-   for ($index = 0; $index <= count($data); $index++) {
-      $sql = "UPDATE `sensor` SET `" . $sensor[$index] . "` = " . $data[$index] . " WHERE 1";
-      if ($connec->query($sql) === TRUE) {
-         echo "New record created successfully";
-      } else {
-         echo "Error: " . $sql . " => " . $connec->error;
-      }
-   }
+$index = 0;
+while ($index < count($Datas)) {
+   $sql = "UPDATE `sensor` SET `" . $sensors[$index] . "` = " . $Datas[$index] . " WHERE 1";
+   if ($connection->query($sql) === true)
+      $index++;
 }
 
-Update($sensors, $Datas, $connection);
+if ($index === count($Datas)) {
+   echo "Data Update Success";
+}
+else {
+   echo "Data Update Fail : (";
+}
+
 $connection->close();
 ?>

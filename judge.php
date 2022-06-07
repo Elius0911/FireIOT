@@ -1,5 +1,5 @@
 <?php
-    require_once 'database.php'; // 連結資料庫
+    require_once 'espImport.php';
 ?>
 
 <script>
