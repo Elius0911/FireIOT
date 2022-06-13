@@ -3,8 +3,9 @@
 
 <body>
     <h1>
-        太水了啦123456
+        太水了啦
     </h1>
+    <img src="./picture/floor_Plan.jpg"></=>
 </body>
 
 <?php
