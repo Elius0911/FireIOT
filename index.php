@@ -8,13 +8,9 @@
     <h1>
         太水了啦
     </h1>
-<<<<<<< Updated upstream
-    <img src="./picture/floorPlan.jpg">
-=======
     <div class="cc">
         <p>haha</p>
     </div>
->>>>>>> Stashed changes
 </body>
 
 <?php
