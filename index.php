@@ -5,7 +5,7 @@
     <h1>
         太水了啦
     </h1>
-    <img src="./picture/floor_Plan.jpg"></=>
+    <img src="./picture/floorPlan.jpg">
 </body>
 
 <?php
