@@ -5,6 +5,7 @@
     <h1>
         太水了啦12345678
     </h1>
+    <img src="./picture/floor_Plan.jpg">
 </body>
 
 <?php
