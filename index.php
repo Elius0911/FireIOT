@@ -13,7 +13,7 @@ echo ("<script type=\"text/javascript\">");
 echo ("function fresh_page()"); 
 echo ("{");
 echo ("window.location.reload();");
-echo ("}"); 
+echo ("}");
 //echo ("setTimeout('fresh_page()',1000);"); //1秒刷新一次
 echo ("</script>");
 ?>
