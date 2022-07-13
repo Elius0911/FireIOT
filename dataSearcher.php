@@ -36,6 +36,6 @@ echo ("function fresh_page()");
 echo ("{");
 echo ("window.location.reload();");
 echo ("}");
-echo ("setTimeout('fresh_page()',1000);"); //2秒刷新一次
+echo ("setTimeout('fresh_page()',1000);"); //1秒刷新一次
 echo ("</script>");
 ?>
