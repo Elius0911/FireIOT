@@ -16,11 +16,8 @@ if ($result) {
     $index = 0; // 資料索引值
     while ($row = $result->fetch_assoc()) { // fetch_assoc: 取得資料之值
         while ($index < count($row)) {
-            $key = array_keys($sensors); //感測器名稱
-            $value = array_values($sensors); //感測器之值
-
-            $sensor = $key[$index];
-            $state = $value[$index];
+            $sensor = $sensors[$index]; //感測器名稱
+            $state = $row[$sensor]; //感測器狀態
             echo    '<tr>
                         <td>' . $sensor . '</td>
                         <td>' . $state . '</td>
