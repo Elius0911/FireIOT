@@ -1,5 +1,8 @@
 <!doctype html>
     <html lang = "zh-Hant-TW">
+    <head>
+        <link rel="stylesheet" href="haha.css">
+    </head>
 
 <body>    
     <center><b><font color="red" size="6">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~指引~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~<br>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~指引~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~<br>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~指引~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~<br>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~指引~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~<br>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~指引~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</font></b></center>
@@ -12,7 +15,7 @@ echo ("<script type=\"text/javascript\">");
 echo ("function fresh_page()"); 
 echo ("{");
 echo ("window.location.reload();");
-echo ("}"); 
+echo ("}");
 //echo ("setTimeout('fresh_page()',1000);"); //1秒刷新一次
 echo ("</script>");
 ?>
