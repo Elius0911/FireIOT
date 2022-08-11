@@ -81,11 +81,13 @@ if ($Kitchen_fire == 1) {
 if ($Kitchen_smoke == 1 && $Kitchen_fire == 0) {
     if ($KitchenGate_smoke == 1) {
         $warningText = "偵測到廚房內煙霧已擴散至廚房門口！";
-        $instructionText = "請立即打開抽油煙機，若有風險請立即使用滅火器。";
+        if ($instructionText == "")
+            $instructionText = "請立即打開抽油煙機，若有風險請立即使用滅火器。";
     }
     else {
         $warningText .= "偵測到廚房內有煙霧！";
-        $instructionText = "請立即打開抽油煙機，若有風險請立即使用滅火器。";
+        if ($instructionText == "")
+            $instructionText = "請立即打開抽油煙機，若有風險請立即使用滅火器。";
     }
 }
 
@@ -102,7 +104,8 @@ if ($Bedroom_fire == 1) {
 }
 if ($Bedroom_smoke == 1 && $Bedroom_fire == 0) {
     $warningText .= "偵測到臥室內有煙霧！";
-    $instructionText = "請立即檢查插座，或是否有可燃物。若有風險請立即使用滅火器。";
+    if ($instructionText == "")
+        $instructionText = "請立即檢查插座，或是否有可燃物。若有風險請立即使用滅火器。";
 }
 
 if ($Livingroom_fire == 1) {
@@ -129,7 +132,8 @@ if ($Livingroom_fire == 1) {
 }
 if ($Livingroom_smoke == 1 && $Livingroom_fire == 0) {
     $warningText .= "偵測到客廳內有煙霧！";
-    $instructionText = "請立即檢查插座，或是否有可燃物。若有風險請立即使用滅火器。";
+    if ($instructionText == "")
+        $instructionText = "請立即檢查插座，或是否有可燃物。若有風險請立即使用滅火器。";
 }
 
 if ($Toilet_CO == 1) {
@@ -138,13 +142,11 @@ if ($Toilet_CO == 1) {
         $instructionText = "請打開浴室窗戶";
 }
 
-print($warningText . $instructionText . $instructionText2 . $instructionText3);
-
 echo ("<script type=\"text/javascript\">");
 echo ("function fresh_page()");
 echo ("{");
 echo ("window.location.reload();");
 echo ("}");
-echo ("setTimeout('fresh_page()',2000);"); //2秒刷新一次
+echo ("setTimeout('fresh_page()',1000);"); //1秒刷新一次
 echo ("</script>");
 ?>
