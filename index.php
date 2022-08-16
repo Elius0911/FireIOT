@@ -35,4 +35,3 @@ require_once 'logic.php';
     ?>
     <right><a><font size="8">燈號說明：<br><span style="color:red">● 紅色</span>：火焰感測器<br><span style="color:orange">● 橘色</span>：煙霧感測器<br><span style="color:blue">● 藍色</span>：一氧化碳感測器<br><span style="color:green">● 綠色</span>：人體感測器</font></a></right>
 </body>
-?>
