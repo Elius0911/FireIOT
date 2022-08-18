@@ -59,22 +59,14 @@ if ($Kitchen_fire == 1) {
         $warningText .= "偵測到廚房內起火，且煙霧已擴散至廚房門口！";
         if ($Kitchen_body == 1)
             $instructionText = "在廚房的人：若火勢小，請立即滅火；若火勢過大，請立即向外並關上廚房門後，向大門逃生。";
-        if ($Bedroom_body == 1)
-            $instructionText2 = "不在廚房的人：若火勢小，請立即滅火；若火勢過大，請立即向外並關上廚房門後，向大門逃生。";
-        if ($Livingroom_body == 1)
-            $instructionText2 = "不在廚房的人：若火勢小，請立即滅火；若火勢過大，請立即向外並關上廚房門後，向大門逃生。";
-        if ($Toilet_body == 1)
+        if ($Bedroom_body == 1 || $Livingroom_body == 1 || $Toilet_body == 1)
             $instructionText2 = "不在廚房的人：若火勢小，請立即滅火；若火勢過大，請立即向外並關上廚房門後，向大門逃生。";
     }
     else {
         $warningText .= "偵測到廚房內起火！";
         if ($Kitchen_body == 1)
             $instructionText = "在廚房的人：若火勢小，請立即滅火；若火勢過大，請立即向外並關上廚房門後，向大門逃生。";
-        if ($Bedroom_body == 1)
-            $instructionText2 = "不在廚房的人：若火勢小，請立即滅火；若火勢過大，請立即關上廚房門後，向大門逃生。";
-        if ($Livingroom_body == 1)
-            $instructionText2 = "不在廚房的人：若火勢小，請立即滅火；若火勢過大，請立即關上廚房門後，向大門逃生。";
-        if ($Toilet_body == 1)
+        if ($Bedroom_body == 1 || $Livingroom_body == 1 || $Toilet_body == 1)
             $instructionText2 = "不在廚房的人：若火勢小，請立即滅火；若火勢過大，請立即關上廚房門後，向大門逃生。";
     }
 }
@@ -95,11 +87,7 @@ if ($Bedroom_fire == 1) {
     $warningText .= "偵測到臥室內起火！";
     if ($Bedroom_body == 1)
         $instructionText = "在臥室的人：若火勢小，請立即滅火；若火勢過大，請立即向外並關上臥室門後，向大門逃生。";
-    if ($Kitchen_body == 1)
-        $instructionText2 = "不在臥室的人：若火勢小，請立即滅火；若火勢過大，請立即關上臥室門後，向大門逃生。";
-    if ($Livingroom_body == 1)
-        $instructionText2 = "不在臥室的人：若火勢小，請立即滅火；若火勢過大，請立即關上臥室門後，向大門逃生。";
-    if ($Toilet_body == 1)
+    if ($Kitchen_body == 1 || $Livingroom_body == 1 || $Toilet_body == 1)
         $instructionText2 = "不在臥室的人：若火勢小，請立即滅火；若火勢過大，請立即關上臥室門後，向大門逃生。";
 }
 if ($Bedroom_smoke == 1 && $Bedroom_fire == 0) {
@@ -113,21 +101,15 @@ if ($Livingroom_fire == 1) {
         $warningText .= "偵測到客廳起火，且煙霧已擴散至大門口！";
         if ($Bedroom_body == 1)
             $instructionText = "在臥室的人：請立即關上門，並拿衣物等布類塞住門縫後，打119後向陽台外呼救。";
-        if ($Kitchen_body == 1)
-            $instructionText2 = "不在臥室的人：請立即關上門，並拿衣物等布類塞住門縫後，打119等待救援。";
-        if ($Toilet_body == 1)
+        if ($Kitchen_body == 1 || $Toilet_body == 1)
             $instructionText2 = "不在臥室的人：請立即關上門，並拿衣物等布類塞住門縫後，打119等待救援。";
     }
     else {
         $warningText .= "偵測到客廳起火！";
         if ($Livingroom_body == 1)
             $instructionText = "在客廳的人：若火勢小，請立即滅火；若火勢過大，請立即向大門逃生。";
-        if ($Bedroom_body == 1)
+        if ($Bedroom_body == 1 || $Kitchen_body == 1 || $Toilet_body == 1)
             $instructionText2 = "不在客廳的人：若火勢小，請立即滅火；若火勢過大，請立即向大門逃生。";
-        if ($Kitchen_body == 1)
-            $instructionText2 = "不在客廳的人：若火勢小，請立即滅火；若火勢過大，請立即向大門逃生。";
-        if ($Toilet_body == 1)
-            $instructionText2 = "不在客廳的人：若火勢小，請立即滅火；若火勢過大，請立即向大門逃生。";  
     }
 }
 if ($Livingroom_smoke == 1 && $Livingroom_fire == 0) {
