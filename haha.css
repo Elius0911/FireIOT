@@ -1,3 +1,97 @@
 .cc {
-    color: aqua;
+    color: rgb(255, 0, 0);
+}
+
+.floor{
+    position: relative;
+    text-align: center;
+}
+
+.KitchenFire{
+    position: absolute;
+    font-weight: bold;
+    top: 30px;
+    left : 295px; 
+}
+.KitchenPeople{
+    position: absolute;
+    font-weight: bold;
+    top: 85px;
+    left : 325px; 
+}
+.KitchenSmoke{
+    position: absolute;
+    font-weight: bold;
+    top: 30px;
+    left : 350px; 
+}
+
+.BethroomPeople{
+    position: absolute;
+    font-weight: bold;
+    top: 400px;
+    left : 300px; 
+}
+.BethroomCO1{
+    position: absolute;
+    font-weight: bold;
+    top: 400px;
+    left : 355px; 
+}
+
+.DoorFire{
+    position: absolute;
+    font-weight: bold;
+    top: 400px;
+    left : 530px; 
+}
+.DoorSmoke{
+    position: absolute;
+    font-weight: bold;
+    top: 400px;
+    left : 585px; 
+}
+
+.LivingroomSmoke{
+    position: absolute;
+    font-weight: bold;
+    top: 665px;
+    left : 400px;
+}
+.TVSmoke{
+    position: absolute;
+    font-weight: bold;
+    top: 660px;
+    left : 750px;
+}
+.TVFire{
+    position: absolute;
+    font-weight: bold;
+    top: 660px;
+    left : 695px;
+}
+.LivingroomPeople{
+    position: absolute;
+    font-weight: bold;
+    top: 400px;
+    left : 760px;
+}
+
+.BedroomSmoke{
+    position: absolute;
+    font-weight: bold;
+    top: 320px;
+    left : 800px;
+}
+.BedroomPeople{
+    position: absolute;
+    font-weight: bold;
+    top: 320px;
+    left : 855px;
+}
+.BedroomFire{
+    position: absolute;
+    font-weight: bold;
+    top: 265px;
+    left : 830px;
 }
