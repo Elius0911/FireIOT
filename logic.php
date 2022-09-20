@@ -45,6 +45,17 @@ $instructionText = "";
 $instructionText2 = "";
 $instructionText3 = "";
 
+function alarmJudge () {
+    global $warningText;
+    if ($warningText != "") {
+        $newData = array('alarm' => 1, 'warningText' => $warningText);
+    }
+    else {
+        $newData = array('alarm' => 0);
+    }
+    file_put_contents('alarm.json', json_encode($newData));
+}
+
 if ($Kitchen_fire == 1) {
     if ($KitchenGate_fire == 1) {
         $warningText .= "偵測到廚房內起火，並已延燒到廚房門口！";
@@ -55,7 +66,7 @@ if ($Kitchen_fire == 1) {
         if ($Toilet_body == 1)
             $instructionText3 = "在廁所的人：請立即關上門，並拿衣物等布類塞住門縫後，打119等待救援。";
     }
-    elseif ($KitchenGate_smoke == 1 && $KitchenGate_fire == 0) { 
+    elseif ($KitchenGate_smoke == 1 && $KitchenGate_fire == 0) {
         $warningText .= "偵測到廚房內起火，且煙霧已擴散至廚房門口！";
         if ($Kitchen_body == 1)
             $instructionText = "在廚房的人：若火勢小，請立即滅火；若火勢過大，請立即向外並關上廚房門後，向大門逃生。";
@@ -123,6 +134,8 @@ if ($Toilet_CO == 1) {
     if ($instructionText == "")
         $instructionText = "請打開浴室窗戶";
 }
+
+alarmJudge();
 
 echo ("<script type=\"text/javascript\">");
 echo ("function fresh_page()");
