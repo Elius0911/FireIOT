@@ -36,7 +36,7 @@
     <?php
         /*echo '<img src = "picture/redCircle.png">';
         if ($Kitchen_fire == 1)
-            echo '<div id="KF_flash"><img src = "picture/red.png"/></div>';
+            echo '<div id="redCircle.png"><img src = "picture/red.png"/></div>';
         /*echo '<img src = "picture/redCircle.png">';
         if ($Kitchen_smoke == 1)
             echo '<div id="KS_flash"><img src = "picture/red.png"/></div>';*/
