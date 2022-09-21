@@ -7,91 +7,91 @@
     text-align: center;
 }
 
-.KitchenFire{
+.Kitchen_fire{
     position: absolute;
     font-weight: bold;
     top: 30px;
     left : 295px; 
 }
-.KitchenPeople{
+.Kitchen_body{
     position: absolute;
     font-weight: bold;
     top: 85px;
     left : 325px; 
 }
-.KitchenSmoke{
+.Kitchen_smoke{
     position: absolute;
     font-weight: bold;
     top: 30px;
     left : 350px; 
 }
 
-.BethroomPeople{
+.Toilet_body{
     position: absolute;
     font-weight: bold;
     top: 400px;
     left : 300px; 
 }
-.BethroomCO1{
+.Toilet_CO{
     position: absolute;
     font-weight: bold;
     top: 400px;
     left : 355px; 
 }
 
-.DoorFire{
+.KitchenGate_fire{
     position: absolute;
     font-weight: bold;
     top: 400px;
     left : 530px; 
 }
-.DoorSmoke{
+.KitchenGate_smoke{
     position: absolute;
     font-weight: bold;
     top: 400px;
     left : 585px; 
 }
 
-.LivingroomSmoke{
+.Gate_smoke{
     position: absolute;
     font-weight: bold;
     top: 665px;
     left : 400px;
 }
-.TVSmoke{
+.Livingroom_smoke{
     position: absolute;
     font-weight: bold;
     top: 660px;
-    left : 750px;
+    left : 1100px;
 }
-.TVFire{
+.Livingroom_fire{
     position: absolute;
     font-weight: bold;
-    top: 660px;
-    left : 695px;
+    top: 605px;
+    left : 1100px;
 }
-.LivingroomPeople{
+.Livingroom_body{
     position: absolute;
     font-weight: bold;
-    top: 400px;
-    left : 760px;
+    top: 635px;
+    left : 1050px;
 }
 
-.BedroomSmoke{
+.Bedroom_smoke{
     position: absolute;
     font-weight: bold;
-    top: 320px;
-    left : 800px;
+    top: 30px;
+    left : 900px;
 }
-.BedroomPeople{
+.Bedroom_body{
     position: absolute;
     font-weight: bold;
-    top: 320px;
-    left : 855px;
+    top: 90px;
+    left : 900px;
 }
-.BedroomFire{
+.Bedroom_fire{
     position: absolute;
     font-weight: bold;
-    top: 265px;
-    left : 830px;
+    top: 150px;
+    left : 900px;
 }
