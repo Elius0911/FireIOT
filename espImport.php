@@ -17,7 +17,7 @@ while ($index < count($Datas)) {
       $index++;
 }
 
-if ($index === count($Datas)) { //若所有資料皆有收到, 顯示成功
+if ($index == count($Datas)) { //若所有資料皆有收到, 顯示成功
    echo "Data Update Success <br>";
    echo "Data Import: ";
    print_r($DataPack);
