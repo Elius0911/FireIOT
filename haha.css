@@ -1,3 +1,97 @@
 .cc {
-    color: aqua;
+    color: rgb(255, 0, 0);
+}
+
+.floor{
+    position: relative;
+    text-align: center;
+}
+
+.Kitchen_fire{
+    position: absolute;
+    font-weight: bold;
+    top: 30px;
+    left : 295px; 
+}
+.Kitchen_body{
+    position: absolute;
+    font-weight: bold;
+    top: 85px;
+    left : 325px; 
+}
+.Kitchen_smoke{
+    position: absolute;
+    font-weight: bold;
+    top: 30px;
+    left : 350px; 
+}
+
+.Toilet_body{
+    position: absolute;
+    font-weight: bold;
+    top: 400px;
+    left : 300px; 
+}
+.Toilet_CO{
+    position: absolute;
+    font-weight: bold;
+    top: 400px;
+    left : 355px; 
+}
+
+.KitchenGate_fire{
+    position: absolute;
+    font-weight: bold;
+    top: 400px;
+    left : 530px; 
+}
+.KitchenGate_smoke{
+    position: absolute;
+    font-weight: bold;
+    top: 400px;
+    left : 585px; 
+}
+
+.Gate_smoke{
+    position: absolute;
+    font-weight: bold;
+    top: 665px;
+    left : 400px;
+}
+.Livingroom_smoke{
+    position: absolute;
+    font-weight: bold;
+    top: 660px;
+    left : 1100px;
+}
+.Livingroom_fire{
+    position: absolute;
+    font-weight: bold;
+    top: 605px;
+    left : 1100px;
+}
+.Livingroom_body{
+    position: absolute;
+    font-weight: bold;
+    top: 635px;
+    left : 1050px;
+}
+
+.Bedroom_smoke{
+    position: absolute;
+    font-weight: bold;
+    top: 30px;
+    left : 900px;
+}
+.Bedroom_body{
+    position: absolute;
+    font-weight: bold;
+    top: 90px;
+    left : 900px;
+}
+.Bedroom_fire{
+    position: absolute;
+    font-weight: bold;
+    top: 150px;
+    left : 900px;
 }
