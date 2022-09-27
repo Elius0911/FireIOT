@@ -37,12 +37,12 @@
 .KitchenGate_fire{
     position: absolute;
     top: 400px;
-    left : 450px; 
+    left : 530px; 
 }
 .KitchenGate_smoke{
     position: absolute;
-    top: 400px;
-    left : 505px; 
+    top: 455px;
+    left : 530px; 
 }
 
 .Gate_smoke{
@@ -68,17 +68,17 @@
 
 .Bedroom_smoke{
     position: absolute;
-    top: 30px;
+    top: 90px;
     left : 820px;
 }
 .Bedroom_body{
     position: absolute;
-    top: 90px;
+    top: 150px;
     left : 820px;
 }
 .Bedroom_fire{
     position: absolute;
-    top: 150px;
+    top: 30px;
     left : 820px;
 }
 
@@ -86,4 +86,25 @@
     font-size: 75px;
     font-weight:bold;
     text-align:center;
+}
+
+.KitchenToGateArrow{
+    position: absolute;
+    top: 230px;
+    left : 130px;
+}
+.RoomToGateArrow{
+    position: absolute;
+    top: 267px;
+    left : 130px;
+}
+.RoomToBalconyArrow{
+    position: absolute;
+    top: 280px;
+    left : 850px;
+}
+.LivingToGateArrow{
+    position: absolute;
+    top: 620px;
+    left : 150px;
 }
