@@ -127,8 +127,14 @@ require_once 'logic.php';
             echo '<span class="RoomToBalconyArrow"><img src = "picture/RoomToBalcony.png" width="140"  /></span>';
 
         if ($arrow_LivingToGate == 1)
-            echo '  <span class="LivingToGateArrow"><img src = "picture/LivingToGate.png" width="360"  /></span>';
+            echo '  <span class="LivingToGateArrow"><img src = "picture/LivingToGate.png"   /></span>';
         ?>
+        <span class="GateArrow"><img src = "picture/Gate.png" width='350' /></span>
+        <span class="KitchenToGateArrow"><img src = "picture/KitchenToGate.png" width='47.5' /></span>
+        <span class="RoomToGateArrow"><img src = "picture/RoomToGate.png" width='97.5' /></span>
+        <span class="RoomToBalconyArrow"><img src = "picture/RoomToBalcony.png" width='200' /></span>
+        <span class="LivingToGateArrow"><img src = "picture/LivingToGate.png" width='255' /></span>
+        <span class="ToiletToGateArrow"><img src = "picture/ToiletToGate.png" width='130' /></span>
         <img src="picture/floorPlan.jpg" width="1000" height="730" style="float:left;margin:0px 100px 0px 100px" alt="">
     </div>
     
