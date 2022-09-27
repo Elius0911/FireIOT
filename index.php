@@ -9,14 +9,31 @@ require_once 'logic.php';
         <link rel="stylesheet" href="haha.css">
     </head>
 
-<body>    
-    <div class="cc">
-        <center><b><font color="red" size="6">
-            <?php echo $warningText?><br>
-            <?php echo $instructionText?><br>
-            <?php echo $instructionText2?><br>
-            <?php echo $instructionText3?><br>
-        </font></b></center>
+<body>
+    <div class="top">
+        <div class="warning">
+            <?php 
+                if ($warningText != "")
+                    echo "警告：" . $warningText;
+            ?>
+        </div>
+
+        <div class="instructionText">
+            <?php
+                if ($instructionText != "" || $instructionText2 != "" || $instructionText3 != "")
+                    echo "逃生指示：";
+            ?>
+        </div>
+        <div class="instruction">
+            <?php
+                if ($instructionText != "")
+                    echo "●　" . $instructionText . "<br>";
+                if ($instructionText2 != "")
+                    echo "●　" . $instructionText2 . "<br>";
+                if ($instructionText3 != "")
+                    echo "●　" . $instructionText3;
+            ?>
+        </div>
     </div>
 
     <div class="floor">

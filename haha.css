@@ -1,110 +1,135 @@
-.cc {
-    color: rgb(255, 0, 0);
+.top {
+    margin: 0px 0px 0px 100px;
 }
+    .warning {
+        font-size: 30px;
+        font-weight: bold;
+        color: rgb(255, 0, 0);
+    }
+    .instructionText {
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .instruction {
+        font-size: 30px;
+        font-weight: bold;
+        color: rgb(255, 0, 0);
+    }
 
+/*平面圖*/
 .floor{
     position: relative;
     text-align: center;
 }
 
-.Kitchen_fire{
-    position: absolute;
-    top: 30px;
-    left : 215px; 
-}
-.Kitchen_body{
-    position: absolute;
-    top: 85px;
-    left : 245px; 
-}
-.Kitchen_smoke{
-    position: absolute;
-    top: 30px;
-    left : 270px; 
-}
+    /*廚房*/
+    .Kitchen_fire{
+        position: absolute;
+        top: 30px;
+        left : 215px; 
+    }
+    .Kitchen_smoke{
+        position: absolute;
+        top: 30px;
+        left : 270px; 
+    }
+    .Kitchen_body{
+        position: absolute;
+        top: 80px;
+        left : 242.5px; 
+    }
 
-.Toilet_body{
-    position: absolute;
-    top: 400px;
-    left : 220px; 
-}
-.Toilet_CO{
-    position: absolute;
-    top: 400px;
-    left : 275px; 
-}
+    /*廚房門*/
+    .KitchenGate_fire{
+        position: absolute;
+        top: 400px;
+        left : 530px; 
+    }
+    .KitchenGate_smoke{
+        position: absolute;
+        top: 455px;
+        left : 530px; 
+    }
 
-.KitchenGate_fire{
-    position: absolute;
-    top: 400px;
-    left : 530px; 
-}
-.KitchenGate_smoke{
-    position: absolute;
-    top: 455px;
-    left : 530px; 
-}
+    /*臥室*/
+    .Bedroom_fire{
+        position: absolute;
+        top: 30px;
+        left : 820px;
+    }
+    .Bedroom_smoke{
+        position: absolute;
+        top: 85px;
+        left : 820px;
+    }
+    .Bedroom_body{
+        position: absolute;
+        top: 140px;
+        left : 820px;
+    }
 
-.Gate_smoke{
-    position: absolute;
-    top: 665px;
-    left : 320px;
-}
-.Livingroom_smoke{
-    position: absolute;
-    top: 660px;
-    left : 1020px;
-}
-.Livingroom_fire{
-    position: absolute;
-    top: 605px;
-    left : 1020px;
-}
-.Livingroom_body{
-    position: absolute;
-    top: 635px;
-    left : 970px;
-}
+    /*客廳*/
+    .Livingroom_fire{
+        position: absolute;
+        top: 605px;
+        left : 1020px;
+    }
+    .Livingroom_smoke{
+        position: absolute;
+        top: 660px;
+        left : 1020px;
+    }
+    .Livingroom_body{
+        position: absolute;
+        top: 634px;
+        left : 970px;
+    }
 
-.Bedroom_smoke{
-    position: absolute;
-    top: 90px;
-    left : 820px;
-}
-.Bedroom_body{
-    position: absolute;
-    top: 150px;
-    left : 820px;
-}
-.Bedroom_fire{
-    position: absolute;
-    top: 30px;
-    left : 820px;
-}
+    /*大門*/
+    .Gate_smoke{
+        position: absolute;
+        top: 665px;
+        left : 320px;
+    }
 
+    /*廁所*/
+    .Toilet_CO{
+        position: absolute;
+        top: 400px;
+        left : 220px; 
+    }
+    .Toilet_body{
+        position: absolute;
+        top: 400px;
+        left : 275px; 
+    }
+
+    /*箭頭*/
+    .KitchenToGateArrow{
+        position: absolute;
+        top: 230px;
+        left : 130px;
+    }
+    .RoomToGateArrow{
+        position: absolute;
+        top: 267px;
+        left : 130px;
+    }
+    .RoomToBalconyArrow{
+        position: absolute;
+        top: 280px;
+        left : 850px;
+    }
+    .LivingToGateArrow{
+        position: absolute;
+        top: 620px;
+        left : 150px;
+    }
+
+
+/*燈號指示*/
 .light {
     font-size: 75px;
-    font-weight:bold;
-    text-align:center;
-}
-
-.KitchenToGateArrow{
-    position: absolute;
-    top: 230px;
-    left : 130px;
-}
-.RoomToGateArrow{
-    position: absolute;
-    top: 267px;
-    left : 130px;
-}
-.RoomToBalconyArrow{
-    position: absolute;
-    top: 280px;
-    left : 850px;
-}
-.LivingToGateArrow{
-    position: absolute;
-    top: 620px;
-    left : 150px;
+    font-weight: bold;
+    text-align: center;
 }
