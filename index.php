@@ -9,14 +9,31 @@ require_once 'logic.php';
         <link rel="stylesheet" href="haha.css">
     </head>
 
-<body>    
-    <div class="cc">
-        <center><b><font color="red" size="6">
-            <?php echo $warningText?><br>
-            <?php echo $instructionText?><br>
-            <?php echo $instructionText2?><br>
-            <?php echo $instructionText3?><br>
-        </font></b></center>
+<body>
+    <div class="top">
+        <div class="warning">
+            <?php 
+                if ($warningText != "")
+                    echo "警告：" . $warningText;
+            ?>
+        </div>
+
+        <div class="instructionText">
+            <?php
+                if ($instructionText != "" || $instructionText2 != "" || $instructionText3 != "")
+                    echo "逃生指示：";
+            ?>
+        </div>
+        <div class="instruction">
+            <?php
+                if ($instructionText != "")
+                    echo "●　" . $instructionText . "<br>";
+                if ($instructionText2 != "")
+                    echo "●　" . $instructionText2 . "<br>";
+                if ($instructionText3 != "")
+                    echo "●　" . $instructionText3;
+            ?>
+        </div>
     </div>
 
     <div class="floor">
@@ -70,34 +87,47 @@ require_once 'logic.php';
         if ($Livingroom_fire == 0)
             echo '<span class="Livingroom_fire"><img src = "picture/redCircle.png" width="50" height="50" ></span>';
         else
-            echo '<span class="Livingroom_fire"><img src = "picture/red.png" width="50" height="50" /></span>';
+            echo '<span class="Livingroom_fire"><img src = "picture/red.png" width="50" height="50" ></span>';
 
         if ($Livingroom_smoke == 0)
             echo '<span class="Livingroom_smoke"><img src = "picture/orangeCircle.png" width="50" height="50" ></span>';
         else
-            echo '<span class="Livingroom_smoke"><img src = "picture/orange.png" width="50" height="50" /></span>';
+            echo '<span class="Livingroom_smoke"><img src = "picture/orange.png" width="50" height="50" ></span>';
 
         if ($Livingroom_body == 0)
             echo '<span class="Livingroom_body"><img src = "picture/greenCircle.png" width="50" height="50" ></span>';
         else
-            echo '<span class="Livingroom_body"><img src = "picture/green.png" width="50" height="50" /></span>';
+            echo '<span class="Livingroom_body"><img src = "picture/green.png" width="50" height="50" ></span>';
 
 /*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
             
         if ($Gate_smoke == 0)
             echo '<span class="Gate_smoke"><img src = "picture/orangeCircle.png" width="50" height="50" ></span>';
         else
-            echo '<span class="Gate_smoke"><img src = "picture/orange.png" width="50" height="50" /></span>';
+            echo '<span class="Gate_smoke"><img src = "picture/orange.png" width="50" height="50" ></span>';
 
         if ($Toilet_CO == 0)
             echo '<span class="Toilet_CO"><img src = "picture/blueCircle.png" width="50" height="50" ></span>';
         else
-            echo '<span class="Toilet_CO"><img src = "picture/blue.png" width="50" height="50" /></span>';
+            echo '<span class="Toilet_CO"><img src = "picture/blue.png" width="50" height="50" ></span>';
 
         if ($Toilet_body == 0)
             echo '<span class="Toilet_body"><img src = "picture/greenCircle.png" width="50" height="50" ></span>';
         else
-            echo '<span class="Toilet_body"><img src = "picture/green.png" width="50" height="50" /></span>';
+            echo '<span class="Toilet_body"><img src = "picture/green.png" width="50" height="50" ></span>';
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+        if ($arrow_KitchenToGate == 1)
+            echo '<span class="KitchenToGateArrow"><img src = "picture/KitchenToGate.png" width="380" ></span>';
+
+        if ($arrow_RoomToGate == 1)
+            echo '<span class="RoomToGateArrow"><img src = "picture/RoomToGate.png" width="600"  /></span>';
+
+        if ($arrow_RoomToBalcony == 1)
+            echo '<span class="RoomToBalconyArrow"><img src = "picture/RoomToBalcony.png" width="140"  /></span>';
+
+        if ($arrow_LivingToGate == 1)
+            echo '  <span class="LivingToGateArrow"><img src = "picture/LivingToGate.png" width="360"  /></span>';
         ?>
         <img src="picture/floorPlan.jpg" width="1000" height="730" style="float:left;margin:0px 100px 0px 100px" alt="">
     </div>
