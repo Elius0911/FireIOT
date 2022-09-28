@@ -54,7 +54,7 @@ require_once 'logic.php';
             echo '<span class="Kitchen_body"><img src = "picture/green.png" width="50" height="50" /></span>';
 
 /*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-        
+
         if ($KitchenGate_fire == 0)
             echo '<span class="KitchenGate_fire"><img src = "picture/redCircle.png" width="50" height="50" ></span>';
         else
@@ -118,23 +118,25 @@ require_once 'logic.php';
 
 /*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
         if ($arrow_KitchenToGate == 1)
-            echo '<span class="KitchenToGateArrow"><img src = "picture/KitchenToGate.png" width="380" ></span>';
+            echo '<span class="KitchenToGateArrow"><img src = "picture/KitchenToGate.png" width="47.5" /></span>';
 
         if ($arrow_RoomToGate == 1)
-            echo '<span class="RoomToGateArrow"><img src = "picture/RoomToGate.png" width="600"  /></span>';
+            echo '<span class="RoomToGateArrow"><img src = "picture/RoomToGate.png" width="97.5" /></span>';
 
         if ($arrow_RoomToBalcony == 1)
-            echo '<span class="RoomToBalconyArrow"><img src = "picture/RoomToBalcony.png" width="140"  /></span>';
+            echo '<span class="RoomToBalconyArrow"><img src = "picture/RoomToBalcony.png" width="200" /></span>';
 
         if ($arrow_LivingToGate == 1)
-            echo '  <span class="LivingToGateArrow"><img src = "picture/LivingToGate.png"   /></span>';
+            echo '<span class="LivingToGateArrow"><img src = "picture/LivingToGate.png" width="255" /></span>';
+        
+        if ($arrow_ToiletToGate == 1)
+            echo '<span class="ToiletToGateArrow"><img src = "picture/ToiletToGate.png" width="130"/></span>';
+
+        if ($arrow_Gate == 1)
+            echo '<span class="GateArrow"><img src = "picture/Gate.png" width="350" /></span>';
         ?>
-        <span class="GateArrow"><img src = "picture/Gate.png" width='350' /></span>
-        <span class="KitchenToGateArrow"><img src = "picture/KitchenToGate.png" width='47.5' /></span>
-        <span class="RoomToGateArrow"><img src = "picture/RoomToGate.png" width='97.5' /></span>
-        <span class="RoomToBalconyArrow"><img src = "picture/RoomToBalcony.png" width='200' /></span>
-        <span class="LivingToGateArrow"><img src = "picture/LivingToGate.png" width='255' /></span>
-        <span class="ToiletToGateArrow"><img src = "picture/ToiletToGate.png" width='130' /></span>
+    
+      
         <img src="picture/floorPlan.jpg" width="1000" height="730" style="float:left;margin:0px 100px 0px 100px" alt="">
     </div>
     

@@ -48,6 +48,9 @@ $arrow_RoomToBalcony=0;
 $arrow_LivingToGate=0;
 $arrow_RoomToGate=0;
 $arrow_KitchenToGate=0;
+$arrow_ToiletToGate=0;
+$arrow_Gate=0;
+
 
 function alarmJudge () {
     global $warningText;
@@ -70,6 +73,7 @@ if ($Kitchen_fire == 1) {
         if ($Livingroom_body == 1){
             $instructionText2 = "在客廳的人：請立即掩住口鼻後，向大門逃生。";
             $arrow_LivingToGate = 1;
+            $arrow_Gate = 1;
         }
         if ($Toilet_body == 1){
             $instructionText3 = "在廁所的人：請立即關上門，並拿衣物等布類塞住門縫後，打119等待救援。";
@@ -80,10 +84,22 @@ if ($Kitchen_fire == 1) {
         if ($Kitchen_body == 1){
             $instructionText = "在廚房的人：若火勢小，請立即滅火；若火勢過大，請立即向外並關上廚房門後，向大門逃生。";
             $arrow_KitchenToGate = 1;
+            $arrow_Gate = 1;
         }
-        if ($Bedroom_body == 1 || $Livingroom_body == 1 || $Toilet_body == 1){
+        if ($Bedroom_body == 1 ){
+            $instructionText2 = "不在廚房的人：若火勢小，請立即滅火；若火勢過大，請立即向外並關上廚房門後，向大門逃生。";
+            $arrow_RoomToGate = 1;
+            $arrow_Gate = 1;
+        }
+        if ($Livingroom_body == 1){
             $instructionText2 = "不在廚房的人：若火勢小，請立即滅火；若火勢過大，請立即向外並關上廚房門後，向大門逃生。";
             $arrow_LivingToGate = 1;
+            $arrow_Gate = 1;
+        }
+        if ($Toilet_body == 1){
+            $instructionText2 = "不在廚房的人：若火勢小，請立即滅火；若火勢過大，請立即向外並關上廚房門後，向大門逃生。";
+            $arrow_ToiletToGate = 1;
+            $arrow_Gate = 1;
         }
     }
     else {
@@ -91,10 +107,22 @@ if ($Kitchen_fire == 1) {
         if ($Kitchen_body == 1){
             $instructionText = "在廚房的人：若火勢小，請立即滅火；若火勢過大，請立即向外並關上廚房門後，向大門逃生。";
             $arrow_KitchenToGate= 1 ;
+            $arrow_Gate = 1;
         }
-        if ($Bedroom_body == 1 || $Livingroom_body == 1 || $Toilet_body == 1){
+        if ($Bedroom_body == 1){
+            $instructionText2 = "不在廚房的人：若火勢小，請立即滅火；若火勢過大，請立即關上廚房門後，向大門逃生。";
+            $arrow_RoomToGate = 1;
+            $arrow_Gate = 1;
+        }
+        if ($Livingroom_body == 1){
             $instructionText2 = "不在廚房的人：若火勢小，請立即滅火；若火勢過大，請立即關上廚房門後，向大門逃生。";
             $arrow_LivingToGate = 1;
+            $arrow_Gate = 1;
+        }
+        if ($Toilet_body == 1){
+            $instructionText2 = "不在廚房的人：若火勢小，請立即滅火；若火勢過大，請立即關上廚房門後，向大門逃生。";
+            $arrow_ToiletToGate = 1;
+            $arrow_Gate = 1;
         }
     }
 }
@@ -118,10 +146,22 @@ if ($Bedroom_fire == 1) {
     if ($Bedroom_body == 1){
         $instructionText = "在臥室的人：若火勢小，請立即滅火；若火勢過大，請立即向外並關上臥室門後，向大門逃生。";
         $arrow_RoomToGate= 1 ;
+        $arrow_Gate = 1;
     }
-    if ($Kitchen_body == 1 || $Livingroom_body == 1 || $Toilet_body == 1){
+    if ($Kitchen_body == 1){
+        $instructionText2 = "不在臥室的人：若火勢小，請立即滅火；若火勢過大，請立即關上臥室門後，向大門逃生。";
+        $arrow_KitchenToGate = 1;
+        $arrow_Gate = 1;
+    }
+    if ($Livingroom_body == 1){
         $instructionText2 = "不在臥室的人：若火勢小，請立即滅火；若火勢過大，請立即關上臥室門後，向大門逃生。";
         $arrow_LivingToGate = 1;
+        $arrow_Gate = 1;
+    }
+    if ($Toilet_body == 1){
+        $instructionText2 = "不在臥室的人：若火勢小，請立即滅火；若火勢過大，請立即關上臥室門後，向大門逃生。";
+        $arrow_ToiletToGate = 1;
+        $arrow_Gate = 1;
     }
 }
 if ($Bedroom_smoke == 1 && $Bedroom_fire == 0) {
@@ -147,10 +187,22 @@ if ($Livingroom_fire == 1) {
         if ($Livingroom_body == 1){
             $instructionText = "在客廳的人：若火勢小，請立即滅火；若火勢過大，請立即向大門逃生。";
             $arrow_LivingToGate= 1 ;
+            $arrow_Gate = 1;
         }
-        if ($Bedroom_body == 1 || $Kitchen_body == 1 || $Toilet_body == 1){
+        if ($Bedroom_body == 1){
             $instructionText2 = "不在客廳的人：若火勢小，請立即滅火；若火勢過大，請立即向大門逃生。";
-            $arrow_LivingToGate= 1 ;
+            $arrow_RoomToGate= 1 ;
+            $arrow_Gate = 1;
+        }
+        if ($Kitchen_body == 1){
+            $instructionText2 = "不在客廳的人：若火勢小，請立即滅火；若火勢過大，請立即向大門逃生。";
+            $arrow_KitchenToGate= 1 ;
+            $arrow_Gate = 1;
+        }
+        if ($Toilet_body == 1){
+            $instructionText2 = "不在客廳的人：若火勢小，請立即滅火；若火勢過大，請立即向大門逃生。";
+            $arrow_ToiletToGate= 1 ;
+            $arrow_Gate = 1;
         }
     }
 }
