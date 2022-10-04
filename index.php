@@ -20,18 +20,25 @@ require_once 'logic.php';
 
         <div class="instructionText">
             <?php
-                if ($instructionText != "" || $instructionText2 != "" || $instructionText3 != "")
+                if ($instructionText != "" && ($instructionText_Kitchen != "" || $instructionText_Bedroom != "" || $instructionText_Livingroom != "" || $instructionText_Toilet != ""))
                     echo "逃生指示：";
+                elseif ($instructionText != "")
+                    echo "指示：";
             ?>
+                
         </div>
         <div class="instruction">
             <?php
                 if ($instructionText != "")
-                    echo "●　" . $instructionText . "<br>";
-                if ($instructionText2 != "")
-                    echo "●　" . $instructionText2 . "<br>";
-                if ($instructionText3 != "")
-                    echo "●　" . $instructionText3;
+                    echo $instructionText . "<br>";
+                if ($instructionText_Kitchen != "")
+                    echo "●　" . $instructionText_Kitchen . "<br>";
+                if ($instructionText_Bedroom != "")
+                    echo "●　" . $instructionText_Bedroom . "<br>";
+                if ($instructionText_Livingroom != "")
+                    echo "●　" . $instructionText_Livingroom . "<br>";
+                if ($instructionText_Toilet != "")
+                    echo "●　" . $instructionText_Toilet;
             ?>
         </div>
     </div>
